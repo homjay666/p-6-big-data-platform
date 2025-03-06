@@ -1,0 +1,5 @@
+*.sh text eol=lf
+
+; 发生在Windows平台上，Git工具默认会在把仓库克隆下来后自动转换为CRLF（\r\n）
+; 配置用于管理 shell 脚本的换行符格式。*.sh 匹配所有 .sh 文件，text 声明为文本文件以启用换行符转换，eol=lf 强制使用 Unix 风格换行符（\n）。
+; 这确保了 shell 脚本在 Windows 和 Linux 系统间的兼容性，防止因换行符不一致导致脚本执行失败。

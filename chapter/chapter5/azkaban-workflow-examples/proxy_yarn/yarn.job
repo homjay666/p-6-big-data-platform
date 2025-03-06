@@ -1,0 +1,4 @@
+type=command
+command=yarn jar /soft/home/hadoop-2.8.5/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.8.5.jar pi 16 1000
+user.to.proxy=hadoop
+

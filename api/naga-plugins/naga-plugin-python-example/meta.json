@@ -1,0 +1,16 @@
+{
+  "name": "PythonPluginTest",
+  "version": "v1",
+  "jobType": "command",
+  "language": "python",
+  "pkgParams": [
+    {
+      "name": "hdfs.file.path",
+      "description": "文件路径",
+      "required": false,
+      "defaultValue": "",
+      "type": "STRING"
+    }
+  ],
+  "outParams": []
+}

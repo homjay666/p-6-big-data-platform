@@ -1,0 +1,24 @@
+
+server:
+  port: 8080
+
+spring:
+  servlet:
+    multipart:
+      max-file-size: 1024MB
+      max-request-size: 1024MB
+
+hadoop:
+  namenode-url: hdfs://hadoop-cluster:9000
+  username: hdfs
+  
+hive:
+  url: jdbc:hive2://hadoop-cluster:10000/default
+  username: hive
+  password: 
+  
+spark:
+  master-url: spark://hadoop-cluster:7077
+  deploy-mode: cluster
+  executor-memory: 1g
+  executor-cores: 2
