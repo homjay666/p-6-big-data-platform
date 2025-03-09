@@ -37,6 +37,34 @@
 
 
 
+## 通信拓扑图
+
+==后端SpringBoot与各大数据组件的通信方式==
+
+![服务拓扑图](./img/大数据管理平台拓扑图.png)
+
+```yaml
+hadoop:
+ hdfs:
+   uri: hdfs://namenode:8020
+ yarn:
+   address: resourcemanager:8032
+   webapp: http://resourcemanager:8088
+hive:
+ metastore:
+   uri: thrift://metastore-host:9083
+presto:
+ url: jdbc:presto://presto-coordinator:8080
+ user: admin
+spark:
+ livy:
+   url: http://livy-server:8998
+azkaban:
+ url: http://azkaban-web-server:8081
+ username: azkaban
+ password: azkaban
+```
+
 ## 功能模块
 
 ### 前端
